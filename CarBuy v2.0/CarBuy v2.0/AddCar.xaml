@@ -1,0 +1,144 @@
+﻿<Window x:Class="CarBuy_v2._0.AddCar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarBuy_v2._0"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Background="Transparent"
+        Height="450" Width="430"      
+        MouseDown="Window_MouseDown"
+        ResizeMode="CanResizeWithGrip"
+        AllowsTransparency="True"
+        >
+
+
+    <Border Style="{DynamicResource Border}">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                <GradientStop Color="#01000a" Offset="0"/>
+                <GradientStop Color="#93929c" Offset="0.75"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="430"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="180"/>
+                <ColumnDefinition Width="10"/>
+
+            </Grid.ColumnDefinitions>
+
+
+            <Label Grid.Column="1" Grid.Row="1" FontSize="25" FontFamily="Montserrat" Foreground="White" Margin="0,15,0,0" Grid.ColumnSpan="2">Car Brand</Label>
+            <Label Grid.Column="1" Grid.Row="1" FontSize="25" FontFamily="Montserrat" Foreground="White" Margin="0,45,0,0" Grid.ColumnSpan="2">Model</Label>
+            <Label Grid.Column="1" Grid.Row="1" FontSize="25" FontFamily="Montserrat" Foreground="White" Margin="0,75,0,0" Grid.ColumnSpan="2">Mileage</Label>
+            <Label Grid.Column="1" Grid.Row="1" FontSize="25" FontFamily="Montserrat" Foreground="White" Margin="0,105,0,0" Grid.ColumnSpan="2">Horse Power</Label>
+            <Label Grid.Column="1" Grid.Row="1" FontSize="25" FontFamily="Montserrat" Foreground="White" Margin="0,135,0,0" Grid.ColumnSpan="2">Transmision</Label>
+            <Label Grid.Column="1" Grid.Row="1" FontSize="25" FontFamily="Montserrat" Foreground="White" Margin="0,165,0,0" Grid.ColumnSpan="2">Type</Label>
+            <Label Grid.Column="1" Grid.Row="1" FontSize="25" FontFamily="Montserrat" Foreground="White" Margin="0,195,0,0" Grid.ColumnSpan="2">Registration</Label>
+            <Label Grid.Column="1" Grid.Row="1" FontSize="25" FontFamily="Montserrat" Foreground="White" Margin="0,225,0,0" Grid.ColumnSpan="2">Seats</Label>
+            <Label Grid.Column="1" Grid.Row="1"  FontSize="25" FontFamily="Montserrat" Foreground="White" Margin="0,285,0,0" Grid.ColumnSpan="2">Doors</Label>
+            <Label Grid.Column="1" Grid.Row="1" FontSize="25" FontFamily="Montserrat" Foreground="White" Margin="0,255,0,0" Grid.ColumnSpan="2">Fuel</Label>
+            <Label Grid.Column="1" Grid.Row="1" FontSize="25" FontFamily="Montserrat" Foreground="White" Margin="0,315,0,0" Grid.ColumnSpan="2">Make Year</Label>
+
+            <ComboBox x:Name="CarBrand" Grid.Column="2" Grid.Row="1" FontSize="20" FontFamily="Montserrat" Height="25" VerticalAlignment="Top" Margin="0,20,0,0" Foreground="Black"                            
+                             BorderBrush="White"
+                             HorizontalAlignment="Center"
+                             BorderThickness="0,0,0,1"
+                             Background="Transparent">
+                <ComboBoxItem IsSelected="True">Mercedes</ComboBoxItem>
+                <ComboBoxItem >Audi</ComboBoxItem>
+                <ComboBoxItem>BMW</ComboBoxItem>
+                
+            </ComboBox>
+            <TextBox x:Name="Model" Grid.Column="2" Grid.Row="1" FontSize="25" FontFamily="Montserrat" Height="25" VerticalAlignment="Top" CaretBrush="LightGray" Foreground="White"
+                             BorderBrush="White"
+                             BorderThickness="0,0,0,1"
+                             Background="Transparent" Margin="0,50,0,0"/>
+            <TextBox x:Name="Mileage" Grid.Column="2" Grid.Row="1" FontSize="25" FontFamily="Montserrat" Height="25" VerticalAlignment="Top" CaretBrush="LightGray" Foreground="White"
+                             BorderBrush="White"
+                             BorderThickness="0,0,0,1"
+                             Background="Transparent" Margin="0,80,0,0"/>
+            <TextBox x:Name="HorsePower" Grid.Column="2" Grid.Row="1" FontSize="25" FontFamily="Montserrat" Height="25" VerticalAlignment="Top" CaretBrush="LightGray" Foreground="White"
+                             BorderBrush="White"
+                             BorderThickness="0,0,0,1"
+                             Background="Transparent" Margin="0,110,0,0"/>
+            <ComboBox x:Name="Transmision" Grid.Column="2" Grid.Row="1" FontSize="20" FontFamily="Montserrat" Height="25" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="Black"
+                             BorderBrush="White"
+                             BorderThickness="0,0,0,1"
+                             Background="Transparent" Margin="0,140,0,0">
+                <ComboBoxItem>Manual</ComboBoxItem>
+                <ComboBoxItem IsSelected="True">Auto</ComboBoxItem>
+            </ComboBox>
+            <ComboBox x:Name="Type" Grid.Column="2" Grid.Row="1" FontSize="20" FontFamily="Montserrat" Height="25" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="Black"
+                             BorderBrush="White"
+                             BorderThickness="0,0,0,1"
+                             Background="Transparent" Margin="0,175,0,0">
+                <ComboBoxItem IsSelected="True">Sedan</ComboBoxItem>
+                <ComboBoxItem>Wagon</ComboBoxItem>
+                <ComboBoxItem>Hatchback</ComboBoxItem>
+                <ComboBoxItem>Cabrio</ComboBoxItem>
+            </ComboBox>
+            <TextBox x:Name="Registration" Grid.Column="2" Grid.Row="1" FontSize="25" FontFamily="Montserrat" Height="25" VerticalAlignment="Top" CaretBrush="LightGray" Foreground="White"
+                             BorderBrush="White"
+                             BorderThickness="0,0,0,1"
+                             Background="Transparent" Margin="0,200,0,0"/>
+            <ComboBox x:Name="Seats" Grid.Column="2" Grid.Row="1" FontSize="20" HorizontalAlignment="Center" FontFamily="Montserrat" Height="25" VerticalAlignment="Top" Foreground="Black"
+                             BorderBrush="White"
+                             BorderThickness="0,0,0,1"
+                             Background="Transparent" Margin="0,230,0,0">
+                <ComboBoxItem>2</ComboBoxItem>
+                <ComboBoxItem>4</ComboBoxItem>
+                <ComboBoxItem IsSelected="True">5</ComboBoxItem>
+            </ComboBox>
+            <ComboBox x:Name="Fuel" Grid.Column="2" Grid.Row="1" FontSize="20" HorizontalAlignment="Center" FontFamily="Montserrat" Height="25" VerticalAlignment="Top" Foreground="Black"
+                             BorderBrush="White"
+                             BorderThickness="0,0,0,1"
+                             Background="Transparent" Margin="0,260,0,0">
+                <ComboBoxItem>Benzin</ComboBoxItem>
+                <ComboBoxItem IsSelected="True">Diesel</ComboBoxItem>
+            </ComboBox>
+            <TextBox x:Name="MakeYear" Grid.Column="2" Grid.Row="1" FontSize="25" FontFamily="Montserrat" Height="25" VerticalAlignment="Top" CaretBrush="LightGray" Foreground="White"
+                             BorderBrush="White"
+                             BorderThickness="0,0,0,1"
+                             Background="Transparent" Margin="0,320,0,0"/>
+            
+            <ComboBox x:Name="Doors" Grid.Column="2" Grid.Row="1" FontSize="20" HorizontalAlignment="Center" FontFamily="Montserrat" Height="25" VerticalAlignment="Top" Foreground="Black"
+                             BorderBrush="White"
+                             BorderThickness="0,0,0,1"
+                             Background="Transparent" Margin="0,290,0,0">
+                <ComboBoxItem>2</ComboBoxItem>
+                <ComboBoxItem IsSelected="True">4</ComboBoxItem>
+            </ComboBox>
+
+
+            <Button Click="AddButtonClick" Margin="0,0,90,10" Grid.Row="1" Grid.Column="2" Width="80" Height="30" Style="{DynamicResource AddButton}" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+
+            <Button Click="CancelButtonClick" Margin="0,0,0,10" Grid.Row="1" Grid.Column="2" Width="80" Height="30" Style="{DynamicResource CancelButton}" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            
+            
+        </Grid>
+
+    </Border>
+</Window>

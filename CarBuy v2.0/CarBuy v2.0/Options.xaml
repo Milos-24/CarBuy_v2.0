@@ -1,0 +1,76 @@
+﻿<Window x:Class="CarBuy_v2._0.Options"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarBuy_v2._0"
+        mc:Ignorable="d"
+        xmlns:language="clr-namespace:CarBuy_v2._0.Properties.Languages"
+        Title="MainWindow" Height="250" Width="400"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanResizeWithGrip"
+        AllowsTransparency="True"
+        Background="Transparent"
+        MouseDown="Window_MouseDown">
+
+    <Border CornerRadius="50">
+        <Border Style="{DynamicResource OptionsBorder}">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="#01000a" Offset="0"/>
+                    <GradientStop Color="#93929c" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        
+
+                  <Grid>
+                     <Grid.RowDefinitions>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="230"/>
+                        <RowDefinition Height="10"/>
+                    </Grid.RowDefinitions>
+
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="190"/>
+                        <ColumnDefinition Width="190"/>
+                        <ColumnDefinition Width="10"/>
+                    </Grid.ColumnDefinitions>
+
+
+
+
+                <Button Click="CancelButtonClick" Grid.Row="1" Grid.Column="2" Width="80" Height="30" Style="{DynamicResource CancelButton}" Margin="100,190,0,0">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="7"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+
+                <Button Click="ApplyButtonClick" Grid.Row="1" Grid.Column="2" Width="80" Height="30" Style="{DynamicResource ApplyButton}" Margin="0,190,80,0">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="7"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+
+                <ComboBox x:Name="themeSelected" Grid.Row="1" Grid.Column="1" Width="90" Height="25" Margin="30,0,0,0" FontFamily="Montserrat" Foreground="Black" FontSize="16">
+                    <ComboBoxItem IsSelected="True">Default</ComboBoxItem>
+                    <ComboBoxItem>Red</ComboBoxItem>
+                    <ComboBoxItem>Blue</ComboBoxItem>
+                </ComboBox>
+                
+                    <ComboBox  SelectionChanged="LanguageChange" x:Name="languageSelected" Grid.Row="1" Grid.Column="2" Width="90" Height="25" Margin="0,0,30,0" FontFamily="Montserrat" FontSize="16">
+                        <ComboBoxItem IsSelected="True">English</ComboBoxItem>
+                        <ComboBoxItem>Serbian</ComboBoxItem>
+                    </ComboBox>
+                      
+            </Grid>
+        </Border>
+    </Border>
+</Window>

@@ -1,0 +1,5 @@
+﻿Odrađeni su svih dodatni zahtjevi.
+1. Postoje dva naloga (kupac i prodavac).
+2. Podržana su dva jezika (srpski i engleski).
+3. Postoje tri teme (default, red i blue).
+4. Korisničko upustvo je u sklopu projekta.

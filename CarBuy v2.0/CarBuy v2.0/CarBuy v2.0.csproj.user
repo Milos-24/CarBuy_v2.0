@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddCar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BuyersWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CarForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Options.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Registation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SellersCarForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SellersWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddCar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BuyersWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CarForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Options.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Registation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SellersCarForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SellersWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\BlueStyleSerbian.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\BlueStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\DefaultStyleSerbian.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\DefaultStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\RedStyleSerbian.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\RedStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
